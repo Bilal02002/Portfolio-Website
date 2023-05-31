@@ -1,14 +1,10 @@
 function a()
 {
-     var x = prompt("Are You Student ?")
-    if(x=="yes")
-    {
-        let a="In Progress ^_^";
-      alert(a);
-    }
-    else
-    {
-        let b="Will be available soon...!";
-     alert(b);
-    }
+     var link;
+     link = document.createElement('a');
+     link.href='Resume Bilal.pdf';
+     link.download = 'Resume Bilal.pdf';
+     document.body.appendChild(link);
+     link.click();
+     document.body.removeChild(link);
 } 
